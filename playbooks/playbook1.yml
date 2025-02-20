@@ -1,0 +1,8 @@
+---
+- name: "Proceso fichero"
+  hosts: webservers
+  tasks:
+    - name: "Creación de fichero"
+      shell:
+        touch /tmp/awx_test.txt
+        
